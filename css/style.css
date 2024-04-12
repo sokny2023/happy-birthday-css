@@ -1,0 +1,123 @@
+/* Animation emoji from bottom to top */
+@keyframes float {
+    0%, 100% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-100px);
+    }
+}
+.emoji {
+    font-size: 1.5em;
+}
+.floating-emoji {
+    position: absolute;
+    font-size: 2em;
+    animation: float 10s linear infinite;
+    animation-fill-mode: both; 
+    opacity: 0;
+}
+@keyframes float {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+/* Randomized sizes and delays for more natural effect */
+.emoji1 { left: 10%; animation-delay: 0s; animation-duration: 8s; }
+.emoji2 { left: 30%; animation-delay: 1s; animation-duration: 11s; }
+.emoji3 { left: 50%; animation-delay: 2s; animation-duration: 10s; }
+.emoji4 { left: 70%; animation-delay: 0.5s; animation-duration: 9s; }
+.emoji5 { left: 90%; animation-delay: 1s; animation-duration: 12s; }
+.emoji6 { left: 20%; animation-delay: 3s; animation-duration: 13s; }
+.emoji7 { left: 40%; animation-delay: 3s; animation-duration: 7s; }
+.emoji8 { left: 60%; animation-delay: 2s; animation-duration: 14s; }
+.emoji9 { left: 80%; animation-delay: 0.5s; animation-duration: 8s; }
+.emoji10 { left: 25%; animation-delay: 2s; animation-duration: 12s; }
+.emoji11 { left: 45%; animation-delay: 0.5s; animation-duration: 8s; }
+.emoji12 { left: 55%; animation-delay: 0s; animation-duration: 12s; }
+
+/* animation from box to top */
+@keyframes float-1 {
+    0%, 100% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-100px);
+    }
+}
+.emoji-1 {
+    font-size: 1.5em;
+}
+.floating-emoji-1 {
+    position: absolute;
+    font-size: 2em;
+    animation: float-1 10s linear;
+    opacity: 0;
+}
+@keyframes float-1 {
+    0% {
+        transform: translateY(-20vh);
+        opacity: 1;
+    }
+    20% {
+        transform: translateY(-25vh);
+        opacity: 0.8;
+    }
+    80% {
+        transform: translateY(-37vh);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateY(-40vh);
+        opacity: 0;
+    }
+}
+
+/* Randomized sizes and delays for more natural effect */
+.emoji-t1 { left: 35%; animation-delay: 0.2s; animation-duration: 1.5s; }
+.emoji-t2 { left: 40%; animation-delay: 0.2s; animation-duration: 1s; }
+.emoji-t3 { left: 45%; animation-delay: 0.2s; animation-duration: 1s; }
+.emoji-t4 { left: 50%; animation-delay: 0.2s; animation-duration: 1.5s; }
+.emoji-t5 { left: 55%; animation-delay: 0.2s; animation-duration: 1s; }
+.emoji-t6 { left: 60%; animation-delay: 0.2s; animation-duration: 1.5s; }
+
+
+
+/* animation from box to bottom */
+.floating-emoji-2 {
+    position: absolute;
+    font-size: 2em;
+    animation: float-2 10s linear;
+    animation-fill-mode: both; 
+    opacity: 0;
+}
+@keyframes float-1 {
+    0% {
+        transform: translateY(-5vh);
+        opacity: 0;
+    }
+    20% {
+        transform: translateY(-25vh);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(-35vh);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateY(-40vh);   
+        opacity: 0;
+    }
+}
