@@ -9,10 +9,11 @@
   
 </head>
 <body>
-    <main class="font-sans bg-[#f2e1f8] flex justify-center items-center h-screen m-0  overflow-hidden">
+    <main class="font-sans bg-[#f2e1f8] flex justify-center items-center h-screen m-0 overflow-hidden">
         <section class="">
-            <div class=" birthday ">
-                <div class="birthday-message text-center text-xl sm:text-2xl  md:text-3xl text-[#8345E6] border-2 shadow-md shadow-sky-200  p-5 rounded-lg bg-white shadow-md relative z-10">
+            <button id="birthdayButton" class="px-4 py-2 rounded-[5px] text-white bg-blue-500 hover:bg-blue-600 text-2xl">Click Me</button>
+            <div class="birthday">
+                <div class="birthday-message text-center text-xl sm:text-2xl md:text-3xl text-[#8345E6] border-2 shadow-md shadow-sky-200 p-5 rounded-lg bg-white shadow-md relative z-10">
                     🎉 Happy Birthday to Me! 🎂
                     <div class="emoji mt-4">🎈🎁🎊</div>
                 </div>
@@ -41,6 +42,19 @@
             </div>
         </section>
     </main>
+
+    <script>
+        // Get the button and the birthday message
+        const birthdayButton = document.getElementById('birthdayButton');
+        const birthdayMessage = document.querySelector('.birthday');
+
+        // Add a click event listener to the button
+        birthdayButton.addEventListener('click', () => {
+            // Toggle the visibility of the birthday message
+            birthdayButton.style.display = 'hidden';
+            birthdayMessage.style.display = (birthdayMessage.style.display === 'none') ? 'block' : 'none';
+        });
+    </script>
 
 </body>
 </html>
